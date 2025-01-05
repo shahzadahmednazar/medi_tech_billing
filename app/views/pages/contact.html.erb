@@ -1,0 +1,254 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Site keywords here">
+    <meta name="description" content="">
+    <meta name='copyright' content=''>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MediTechBilling</title>
+    <link rel="icon" href="<%= asset_path('favicon.png') %>">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<%= asset_path('application.css') %>">
+</head>
+
+<body>
+    <header class="header">
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-5 col-12">
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <ul class="top-contact">
+                            <li><i class="fa fa-phone"></i>+19543864393</li>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:inquiries@mtbsolutions.u">inquiries@mtbsolutions.us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-inner">
+            <div class="container">
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-12">
+                            <div class="logo">
+                                <a href="<%= root_path %>"><%= image_tag 'logo-1.png', alt: '#', style: "width: 31%; padding-bottom: 10px;" %></a>
+                            </div>
+                            <div class="mobile-nav"></div>
+                        </div>
+                        <div class="col-lg-7 col-md-9 col-12" style="padding-top: 10px;">
+                            <div class="main-menu">
+                                <nav class="navigation">
+                                    <ul class="nav menu">
+                                        <li class="">
+                                            <a href="<%= root_path %>">Home </a>
+                                        </li>
+                                        <li><a href="<%= about_path %>">About Us</a></li>
+                                        <li>
+                                            <a href="<%= services_path %>">Services<i class="icofont-rounded-down"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="<%= root_path %>">Complete RCM Solutions</a></li>
+                                                <li><a href="<%= root_path %>">Accounts Receivable</a></li>
+                                                <li><a href="<%= root_path %>">Payment Reconciliation</a></li>
+                                                <li><a href="<%= root_path %>">Claims Scrubber/Validation</a></li>
+                                                <li><a href="<%= root_path %>">Accurate Coding</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="<%= contact_path %>">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-12" style="padding-top: 10px;">
+                            <div class="get-quote">
+                                <a href="<%= contact_path %>" class="btn">Schedule Consultation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-6">
+                        <h2>Contact Us</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="contact-us section section-background">
+        <div class="container">
+            <div class="contact-info mb-5">
+                <div class="row">
+                    <div class="col-lg-4 col-12 ">
+                        <div class="single-info">
+                            <i class="icofont icofont-ui-call"></i>
+                            <div class="content mt-2">
+                                <h3>+19543864393</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 ">
+                        <div class="single-info">
+                            <i class="icofont icofont-email"></i>
+                            <div class="content mt-2">
+                                <h3>inquiries@mtbsolutions.us</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 ">
+                        <div class="single-info">
+                            <i class="icofont-google-map"></i>
+                            <div class="content">
+                                <h3>2 Fir e Brigade Road</h3>
+                                <p>New York, America</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="contact-us-left">
+                            <%= image_tag 'contact-us-form.jpg', alt: '#' %>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-us-form">
+                            <h2>Contact With Us</h2>
+                            <p>If you have any questions please fell free to contact with us.</p>
+                            <form class="form" action="<%= schedule_consultation_path %>" method="post">
+                                <%= csrf_meta_tags %>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <input name="name" type="text" placeholder="Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <input name="business_name" type="text" placeholder="Business Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <input name="email" type="email" placeholder="Email" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <input name="phone" type="text" placeholder="Phone" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <div class="nice-select form-control wide" tabindex="0">
+                                                <span class="current">Monthly Billing</span>
+                                                <ul class="list">
+                                                    <li data-value="1k to 30k" class="option">1k to 30k</li>
+                                                    <li data-value="31k to 100k" class="option">31k to 100k</li>
+                                                    <li data-value="Above 100k" class="option">Above 100k</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <div class="nice-select form-control wide" tabindex="0">
+                                                <span class="current"># of Providers</span>
+                                                <ul class="list">
+                                                    <li data-value="1 to 5" class="option selected">1 to 5</li>
+                                                    <li data-value="6 to 10" class="option">6 to 10</li>
+                                                    <li data-value="Above 10" class="option">Above 10</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <div class="form-group">
+                                            <input name="total_ar" type="text" placeholder="Total AR" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <div class="form-group">
+                                            <textarea name="message" placeholder="Write Your Message Here....." required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-4 col-12">
+                                        <div class="form-group">
+                                            <div class="button">
+                                                <button type="submit" class="btn">SCHEDULE A CONSULTATION</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 col-md-8 col-12">
+                                        <p>( We will confirm by an email )</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="footer ">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12" style="justify-items: center;">
+                        <div class="single-footer">
+                            <div class="logo">
+                                <a href="<%= root_path %>"><%= image_tag 'logo-white.png', alt: '#', style: "width: 30%;" %></a>
+                            </div>
+                            <ul class="top-contact mt-2">
+                                <li><i style="color: #FFFFFF;" class="fa fa-envelope"></i><a style="color: #FFFFFF; padding-left: 10px; align-self: center;" href="mailto:inquiries@mtbsolutions.u">inquiries@mtbsolutions.us</a></li>
+                                <li style="color: #FFFFFF;"><i style="color: #FFFFFF; padding-right: 10px;" class="fa fa-phone"></i>+19543864393</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-6 col-12">
+                        <div class="single-footer f-link">
+                            <h2>Important Links</h2>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <ul>
+                                        <li><a href="<%= root_path %>"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+                                        <li><a href="<%= about_path %>"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+                                        <li><a href="<%= services_path %>"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
+                                        <li><a href="<%= contact_path %>"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-footer">
+                            <h2>Follow Us</h2>
+                            <ul class="social">
+                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#"><i class="icofont-instagram"></i></a></li>
+                                <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

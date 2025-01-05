@@ -1,0 +1,481 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Site keywords here">
+    <meta name="description" content="">
+    <meta name='copyright' content=''>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MediTechBilling</title>
+    <link rel="icon" href="<%= asset_path('favicon.png') %>">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<%= asset_path('application.css') %>">
+</head>
+
+<body>
+    <header class="header">
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-5 col-12">
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <!-- Top Contact -->
+                        <ul class="top-contact">
+                            <li><i class="fa fa-phone"></i>+19543864393</li>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:inquiries@mtbsolutions.u">inquiries@mtbsolutions.us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-inner">
+            <div class="container">
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-12">
+                            <!-- Start Logo -->
+                            <div class="logo">
+                                <a href="<%= root_path %>"><%= image_tag 'logo-1.png', alt: '#', style: "width: 31%; padding-bottom: 10px;" %></a>
+                            </div>
+                            <!-- End Logo -->
+                            <!-- Mobile Nav -->
+                            <div class="mobile-nav"></div>
+                            <!-- End Mobile Nav -->
+                        </div>
+                        <div class="col-lg-7 col-md-9 col-12" style="padding-top: 10px;">
+                            <div class="main-menu">
+                                <nav class="navigation">
+                                    <ul class="nav menu">
+                                        <li class="active">
+                                            <a href="<%= root_path %>">Home </a>
+                                        </li>
+                                        <li><a href="<%= about_path %>">About Us</a></li>
+                                        <li>
+                                            <a href="<%= services_path %>">Services<i class="icofont-rounded-down"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="<%= root_path %>">Complete RCM Solutions</a></li>
+                                                <li><a href="<%= root_path %>">Accounts Receivable</a></li>
+                                                <li><a href="<%= root_path %>">Payment Reconciliation</a></li>
+                                                <li><a href="<%= root_path %>">Claims Scrubber/Validation</a></li>
+                                                <li><a href="<%= root_path %>">Accurate Coding</a></li>
+                                            </ul>
+                                        </li> <!-- Update with the correct path for services -->
+                                        <li><a href="<%= contact_path %>">Contact Us</a></li> <!-- Update with the correct path for contact -->
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--/ End Main Menu -->
+                        </div>
+                        <div class="col-lg-2 col-12" style="padding-top: 10px;">
+                            <div class="get-quote">
+                                <a href="<%= contact_path %>" class="btn">Schedule Consultation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="slider">
+        <div class="hero-slider">
+            <div class="single-slider" style="background-image:url('<%= asset_path('slider-3.jpg') %>')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-4 col-sm-12">
+                            <div class="text">
+                                <h1>Ever done <span>Enrollments?</span></h1>
+                                <p class="text-color">
+                                    Say goodbye to endless hours chasing down insurance enrollment statuses!<br>
+                                    Let MTB Solutions handle it all for you. Get your peace of mind<br>
+                                    and a hassle-free experience.
+                                </p>
+                                <a href="<%= about_path %>" class="mt-4" style="border-radius: unset; background-color: #1D6EA3; padding: 6px 20px; font-size: 16px; float: inline-start;">
+                                    <span style="color: white; font-size: 13px;">Schedule Consultation</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slider" style="background-image:url('<%= asset_path('slider2.jpg') %>')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-4 col-sm-12">
+                            <div class="text">
+                                <h1>Helping patients understand<br> their <span> claims and bills?</span></h1>
+                                <p class="text-color">
+                                    MTB Solutions not only just takes care of the patient's statements<br>
+                                    but also our experienced staff members will be ready to <br>
+                                    address any query regarding their balance.
+                                </p>
+                                <a href="<%= about_path %>" class="mt-4" style="border-radius: unset; background-color: #1D6EA3; padding: 6px 20px; font-size: 16px; float: inline-start;">
+                                    <span style="color: white; font-size: 13px;">Sounds Interesting? Yes!</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slider" style="background-image:url('<%= asset_path('slider-1.jpg') %>')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-4 col-sm-12">
+                            <div class="text">
+                                <h1>Rejection claim from an <span> insurance company?</span></h1>
+                                <p class="text-color">
+                                    Our streamlined workflow is your ticket to hassle-free billing<br>
+                                    and reduced rejection rates. Trust our expert team and<br>
+                                    proven processes. Experience the difference with
+                                </p>
+                                <a href="<%= about_path %>" class="mt-4" style="border-radius: unset; background-color: #1D6EA3; padding: 6px 20px; font-size: 16px; float: inline-start;">
+                                    <span style="color: white; font-size: 13px;">Sign Me Up For It</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-us section section-background" style="padding: 100px 0;">
+        <div class="container" style="text-align: center;">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12" style="align-content: center;">
+                    <div class="elementor-widget-container">
+                        <h3 class="elementor-heading-title elementor-size-default">About <span style="color:black; text-decoration: underline; text-decoration-color: #1d6ea3">us</span></h3>
+                    </div>
+                    <p style="text-align: justify; font-size: 16px; line-height: 1.6; margin-bottom: 30px; font-weight: 400;">
+                        MTB Solutions provides skillful medical billing and management services to make your medical practices and affiliated insurance matters hassle-free. We are a team of experienced Healthcare IT Solution Providers who have over time successfully developed a medical billing module that not just works efficiently to produce accurate results but also saves time and money.
+                    </p>
+                    <a href="<%= about_path %>" style="border-radius: unset; background-color: #1D6EA3; padding: 6px 20px; font-size: 16px; float: inline-start;">
+                        <span style="color: white; font-size: 13px;">Read More</span>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <%= image_tag 'about-us.png', alt: 'about-us', style: "float: inline-end; width: 565px;" %>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="about-us section-background" style="justify-items: center;">
+        <h3 class="elementor-heading-title elementor-size-default">OUR <span style="color:black; text-decoration: underline; text-decoration-color: #1d6ea3">SERVICES</span></h3>
+    </div>
+
+    <section class="about-us section-background" style="padding-top: 100px;">
+        <div class="container" style="text-align: center;">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12" style="align-content: center;">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default">Complete RCM <span style="color:black; text-decoration: underline; text-decoration-color: #1d6ea3">Solution</span></h2>
+                    </div>
+                    <p style="text-align: justify; font-size: 16px; line-height: 1.6; margin-bottom: 24px; font-weight: 400;">
+                        Your entire medical billing, revenue cycle, proactive follow-up, denial management, and reporting are handled by our skilled and experienced staff, who also constantly direct the practice staff to get you paid more quickly and at a higher rate.
+                    </p>
+                    <p style="text-align: justify; font-size: 16px; line-height: 1.6; margin-bottom: 30px; font-weight: 400;">
+                        Our Medical Billing Specialists help practices increase their collections and receive payment more quickly and with less effort. Providers will be able to manage variances and denials within the workflow and receive more reimbursements thanks to our PM solution and workflow that are fully integrated.
+                    </p>
+                    <a href="<%= about_path %>" style="border-radius: unset; background-color: #1D6EA3; padding: 6px 20px; font-size: 16px; float: inline-start;">
+                        <span style="color: white; font-size: 13px;">Read More</span>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <%= image_tag 'rcm.png', alt: 'rcm', style: "float: inline-end; width: 565px;" %>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us section-background" style="padding-top: 100px;">
+        <div class="container" style="text-align: center;">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <%= image_tag 'account.png', alt: 'rcm', style: "float: inline-start; width: 65%;" %>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12" style="align-content: center;">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default">Accounts <span style="color:black; text-decoration: underline; text-decoration-color: #1d6ea3">Receivable</span></h2>
+                    </div>
+                    <p style="text-align: justify; font-size: 16px; line-height: 1.6; margin-bottom: 24px; font-weight: 400;">
+                        Assist providers to reduce A/R days with timely follow-up services that deliver a clear understanding of the reasons for overdue accounts receivable and prompt connection with insurance companies and patients.
+                    </p>
+                    <a href="<%= about_path %>" style="border-radius: unset; background-color: #1D6EA3; padding: 6px 20px; font-size: 16px; float: inline-start;">
+                        <span style="color: white; font-size: 13px;">Read More</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us section-background" style="padding-top: 100px;">
+        <div class="container" style="text-align: center;">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12" style="align-content: center;">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default">Payments <span style="color:black; text-decoration: underline; text-decoration-color: #1d6ea3">Reconciliation</span></h2>
+                    </div>
+                    <p style="text-align: justify; font-size: 16px; line-height: 1.6; margin-bottom: 24px; font-weight: 400;">
+                        Upon processing of an insurance claim, an EOB, or electronic remittance advice, is created that outlines the benefits that have been paid or refused for medical treatment or claim. Our team examines the overpayment, recoupment, and reimbursements to the insurance companies in accordance with the practice requirements.
+                    </p>
+                    <a href="<%= about_path %>" style="border-radius: unset; background-color: #1D6EA3; padding: 6px 20px; font-size: 16px; float: inline-start;">
+                        <span style="color: white; font-size: 13px;">Read More</span>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <%= image_tag 'payments.png', alt: 'rcm', style: "float: inline-end; width: 85%;" %>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us section-background" style="padding-top: 100px;">
+        <div class="container" style="text-align: center;">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <%= image_tag 'validation.png', alt: 'rcm', style: "float: inline-start; width: 85%;" %>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12" style="align-content: center;">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default">Claims <span style="color:black; text-decoration: underline; text-decoration-color: #1d6ea3">Scrubber/Validation</span></h2>
+                    </div>
+                    <p style="text-align: justify; font-size: 16px; line-height: 1.6; margin-bottom: 24px; font-weight: 400;">
+                        Cleaning up medical claims is an important step in the revenue cycle management process. Claim denials are mainly caused by human error due to a lack of verification of the claim before it is submitted. Therefore, it is necessary to authenticate a health insurance application before it is submitted for processing.
+                    </p>
+                    <a href="<%= about_path %>" style="border-radius: unset; background-color: #1D6EA3; padding: 6px 20px; font-size: 16px; float: inline-start;">
+                        <span style="color: white; font-size: 13px;">Read More</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us section-background" style="padding: 100px 0;">
+        <div class="container" style="text-align: center;">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12" style="align-content: center;">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default">Accurate Coding <span style="color:black; text-decoration: underline; text-decoration-color: #1d6ea3">Services</span></h2>
+                    </div>
+                    <p style="text-align: justify; font-size: 16px; line-height: 1.6; margin-bottom: 24px; font-weight: 400;">
+                        All healthcare providers must use accurate medical coding. We can assist you in enhancing coding accuracy and ensuring compliance with legal requirements. Your only requirement is to scan and upload your patient records to our secure FTP server. Afterward, on daily basis, our devoted group of coding specialists will download and examine these files.
+                    </p>
+                    <a href="<%= about_path %>" style="border-radius: unset; background-color: #1D6EA3; padding: 6px 20px; font-size: 16px; float: inline-start;">
+                        <span style="color: white; font-size: 13px;">Read More</span>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <%= image_tag 'coder.png', alt: 'rcm', style: "float: inline-end; width: 85%;" %>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start clients -->
+    <div class="clients overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="owl-carousel clients-slider">
+                        <div class="single-clients">
+                            <%= image_tag 'client1.png', alt: '#' %>
+                        </div>
+                        <div class="single-clients">
+                            <%= image_tag 'client2.png', alt: '#' %>
+                        </div>
+                        <div class="single-clients">
+                            <%= image_tag 'client3.png', alt: '#' %>
+                        </div>
+                        <div class="single-clients">
+                            <%= image_tag 'client4.png', alt: '#' %>
+                        </div>
+                        <div class="single-clients">
+                            <%= image_tag 'client5.png', alt: '#' %>
+                        </div>
+                        <div class="single-clients">
+                            <%= image_tag 'client1.png', alt: '#' %>
+                        </div>
+                        <div class="single-clients">
+                            <%= image_tag 'client2.png', alt: '#' %>
+                        </div>
+                        <div class="single-clients">
+                            <%= image_tag 'client3.png', alt: '#' %>
+                        </div>
+                        <div class="single-clients">
+                            <%= image_tag 'client4.png', alt: '#' %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="appointment section-background" style="padding-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>We Are Always Ready to Help You</h2>
+                        <h4 style="justify-items: center;">Contact Us</h4>
+                        <%= image_tag 'section-img.png', alt: '#' %>
+                        <p>Schedule a Free Consultation & Audit of Your Accounts Receivable</p>
+                        <p>24624 Interstate 45 North, Suite 125 Spring, TX 77386</p>
+                        <h5 style="padding-top: 40px;">Email us: inquiries@mtbsolutions.us</h5>
+                        <h6 style="padding-top: 30px;">Call Now to Schedule!</h6>
+                        <p><i class="fa fa-phone"></i> +19543864393 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <form class="form" action="<%= schedule_consultation_path %>" method="post">
+                        <%= csrf_meta_tags %>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <input name="name" type="text" placeholder="Name" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <input name="business_name" type="text" placeholder="Business Name" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <input name="email" type="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <input name="phone" type="text" placeholder="Phone" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <div class="nice-select form-control wide" tabindex="0">
+                                        <span class="current">Monthly Billing</span>
+                                        <ul class="list">
+                                            <li data-value="1k to 30k" class="option">1k to 30k</li>
+                                            <li data-value="31k to 100k" class="option">31k to 100k</li>
+                                            <li data-value="Above 100k" class="option">Above 100k</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <div class="nice-select form-control wide" tabindex="0">
+                                        <span class="current"># of Providers</span>
+                                        <ul class="list">
+                                            <li data-value="1 to 5" class="option selected">1 to 5</li>
+                                            <li data-value="6 to 10" class="option">6 to 10</li>
+                                            <li data-value="Above 10" class="option">Above 10</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-12">
+                                <div class="form-group">
+                                    <input name="total_ar" type="text" placeholder="Total AR" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-12">
+                                <div class="form-group">
+                                    <textarea name="message" placeholder="Write Your Message Here....." required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5 col-md-4 col-12">
+                                <div class="form-group">
+                                    <div class="button">
+                                        <button type="submit" class="btn">SCHEDULE A CONSULTATION</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-8 col-12">
+                                <p>( We will confirm by an email )</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-12 ">
+                    <div class="appointment-image">
+                        <%= image_tag 'contact-img.png', alt: '#' %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer ">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12" style="justify-items: center;">
+                        <div class="single-footer">
+                            <div class="logo">
+                                <a href="<%= root_path %>"><%= image_tag 'logo-white.png', alt: '#', style: "width: 30%;" %></a>
+                            </div>
+                            <ul class="top-contact mt-2">
+                                <li><i style="color: #FFFFFF;" class="fa fa-envelope"></i><a style="color: #FFFFFF; padding-left: 10px; align-self: center;" href="mailto:inquiries@mtbsolutions.u">inquiries@mtbsolutions.us</a></li>
+                                <li style="color: #FFFFFF;"><i style="color: #FFFFFF; padding-right: 10px;" class="fa fa-phone"></i>+19543864393</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-6 col-12">
+                        <div class="single-footer f-link">
+                            <h2>Important Links</h2>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <ul>
+                                        <li><a href="<%= root_path %>"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+                                        <li><a href="<%= about_path %>"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+                                        <li><a href="<%= services_path %>"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
+                                        <li><a href="<%= contact_path %>"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-footer">
+                            <h2>Follow Us</h2>
+                            <ul class="social">
+                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#"><i class="icofont-instagram"></i></a></li> <!-- Updated to Instagram -->
+                                <li><a href="#"><i class="icofont-linkedin"></i></a></li> <!-- Updated to LinkedIn -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="<%= asset_path('js/jquery.min.js') %>"></script>
+    <script src="<%= asset_path('js/jquery-migrate-3.0.0.js') %>"></script>
+    <script src="<%= asset_path('js/jquery-ui.min.js') %>"></script>
+    <script src="<%= asset_path('js/easing.js') %>"></script>
+    <script src="<%= asset_path('js/colors.js') %>"></script>
+    <script src="<%= asset_path('js/popper.min.js') %>"></script>
+    <script src="<%= asset_path('js/bootstrap-datepicker.js') %>"></script>
+    <script src="<%= asset_path('js/jquery.nav.js') %>"></script>
+    <script src="<%= asset_path('js/slicknav.min.js') %>"></script>
+    <script src="<%= asset_path('js/jquery.scrollUp.min.js') %>"></script>
+    <script src="<%= asset_path('js/niceselect.js') %>"></script>
+    <script src="<%= asset_path('js/tilt.jquery.min.js') %>"></script>
+    <script src="<%= asset_path('js/owl-carousel.js') %>"></script>
+    <script src="<%= asset_path('js/jquery.counterup.min.js') %>"></script>
+    <script src="<%= asset_path('js/steller.js') %>"></script>
+    <script src="<%= asset_path('js/wow.min.js') %>"></script>
+    <script src="<%= asset_path('js/jquery.magnific-popup.min.js') %>"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="<%= asset_path('js/bootstrap.min.js') %>"></script>
+    <script src="<%= asset_path('js/main.js') %>"></script>
+</body>
+
+</html>
