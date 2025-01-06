@@ -4226,6 +4226,19 @@ body {
   font-weight: 500 !important;
   line-height: 24px !important;
 }
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 120px !important;
+    padding-bottom: 0px !important;
+  }
+  .top-contact {
+    display: none;
+  }
+  .slicknav_btn {
+    margin: 40px 16px 0px;
+  }
+}
 /*=========================
 	End Footer CSS
 ===========================*/
