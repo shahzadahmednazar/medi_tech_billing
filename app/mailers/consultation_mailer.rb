@@ -1,9 +1,9 @@
 class ConsultationMailer < ApplicationMailer
-  default from: "raoazeemm@gmail.com"
+  default from: "meditechbilling.us@gmail.com"
 
   def schedule_consultation(form_data)
     @form_data = form_data
-    mail(to: "drshahzadmunawarmunawar@gmail.com", subject: "New Consultation Request") do |format|
+    mail(to: @form_data[:email], subject: "New Consultation Request") do |format|
       format.html { render "schedule_consultation" }
     end
   end
